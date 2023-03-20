@@ -115,6 +115,7 @@ class AirDropServer:
     def start_server(self):
         logger.info("Starting HTTPS server")
         self.http_server.serve_forever()
+        logger.info("HTTPS server called")
 
     def stop(self):
         self.zeroconf.unregister_all_services()
